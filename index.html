@@ -25,7 +25,9 @@
   <body>
     <header>
       <div class-"content-wrapper">
-        <a href="#"><img src="../reswebproj/img/unpluggedlogo.png" alt="unplugged logo"></a>
+        <a href="#">
+          <img src="../reswebproj/img/unpluggedlogo.png" alt="unplugged logo">
+        </a>
         <div class="header-divider"></div>
         <nav>
           <ul>
@@ -33,57 +35,57 @@
             <li><a href="about/index.html" target="_blank">About</a></li>
           </ul>
         </nav>
-        <h1>Retreat from the desk, return refreshed.</h1> 
-        <a href="#"><img src="" alt=""></a>
       </div>
     </header>
 
     <main>
-      <section>
-        <div class="hero-image">
-          <img src="../reswebproj/img/unsplash.jpg" alt="picture of nature"></img>
-          <h1>Retreat from the desk, return refreshed.</h1>
+
+      <section class="hero-area">
+        <div class="content-wrapper">
+          <h1>Retreat from the desk, return refreshed.</h1> 
         </div>
       </section>
 
       <aside>
-        <div class="signup-text">
-          <h2>Want to join the next retreat?</h2>
-          <p>Find out when we are holding our next retreat<br>
-          and how your company or team can sign up!<br></p>
-          <h2>Find out more</h2>
-        </div>
-        <div class="signup-form">
-          <input type="text" name="name" value="email address">
-          <input type="button" value="Download Itinerary">
+        <div class="content-wrapper">
+          <div class="form-description">
+            <h2>Want to join the next retreat?</h2>
+            <p>
+              Find out when we are holding our next retreat
+              and how your company or team can sign up!
+            </p>
+          </div>
+          <div class="form">
+            <h2>Find out more</h2>
+            <input type="text" name="name" value="email address">
+            <input type="button" value="Download Itinerary">
+          </div>
         </div>
       </aside>
 
-      <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-      <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>
-      <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-      </script>
-      <script src="https://www.google-analytics.com/analytics.js" async></script>
     </main>
 
     <footer>
       <div class="content-wrapper">
         <div class="footer-content">
           <div class="contact">
-            <h3>Contact</h3>
+            <h4>Contact</h4>
             <address>
               <p>555-555-5555<br>
-              <a href="mailto:hello@unplugged.com">hello@unplugged.com</a></p>
+              <a href="mailto:hello@unplugged.com">hello@unplugged.com</a>
+            </p>
             </address>
           </div>
           <div class="social">
+            <h4>Social</h4>
             <div class="social-icons">
-              <h3>Social</h3>
-              <p><a href="https://www.groovewebdesign.com" target="_blank">hi@groovewebdesign.com</a>
-              <a href="https://www.linkedin.com/madie-few"><img src="" alt="linkedin logo"></a></p>
+              <p>
+                <a href="https://www.groovewebdesign.com" target="_blank">hi@groovewebdesign.com</a>
+              </p>
+
+              <p>
+                <a href="https://www.linkedin.com/madie-few"><img src="" alt="linkedin logo"></a>
+              </p>
             </div>
           </div> 
         </div> <!-- footer content ends -->
@@ -92,6 +94,26 @@
         <p>Copyright 2019 | Unplugged</p>
       </div> 
     </footer>
+
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function() {
+        ga.q.push(arguments)
+      };
+      ga.q = [];
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   </body>
 
 </html>
