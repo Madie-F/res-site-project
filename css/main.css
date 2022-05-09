@@ -14,7 +14,7 @@
 
 html {
   color: #222;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.4;
 }
 
@@ -180,7 +180,7 @@ footer .copyright {
 aside {
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -197,7 +197,7 @@ aside {
 }
 
 .features article {
-  width: 63%
+  width: 63%;
   margin: 30px 0;
 }
 
@@ -277,11 +277,15 @@ aside {
 }
 
 
-/* ====== Helper classes ======= */
-/** Hide visually and from screen readers**/
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
 
-.hidden,
-[hidden] {
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
   display: none !important;
 }
 
@@ -294,34 +298,34 @@ aside {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-.sr-only {
+.visuallyhidden {
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  clip: rect(0 0 0 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  white-space: nowrap;
   width: 1px;
+  white-space: nowrap;
   /* 1 */
 }
 
 /*
- * Extends the .sr-only class to allow the element
+ * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  white-space: inherit;
   width: auto;
+  white-space: inherit;
 }
 
 /*
@@ -344,13 +348,15 @@ aside {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix::before,
-.clearfix::after {
+.clearfix:before,
+.clearfix:after {
   content: " ";
+  /* 1 */
   display: table;
+  /* 2 */
 }
 
-.clearfix::after {
+.clearfix:after {
   clear: both;
 }
 
@@ -368,7 +374,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-flow: row wrap;
+    flex-direction: row;
   }
   
   header {
@@ -404,10 +410,6 @@ aside {
     width: 100%;
   }
   
-  footer {
-    flex-direction: column;  
-  }
-  
   footer p {
     margin: 0;
   }
@@ -434,7 +436,7 @@ aside {
   }
   
   footer .copyright {
-    margin: 20px 0;
+    margin: 0;
   }
   
   /**** Homepage styles ****/
@@ -451,9 +453,10 @@ aside {
   
   aside {
     display: flex;
-    justify-content: center;
-    align-items: center
-    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
   }
   
   /* Features */
@@ -462,6 +465,7 @@ aside {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background-image: url('../img/footer-copy.jpg') center no-repeat;
   }
    
   .features h2 {
@@ -469,15 +473,18 @@ aside {
   }
   
   .features article {
-    width: 63%
+    width: 63%;
     margin: 30px 0;
   }
   
   .features .features-items {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 0;
   }
   
   .features p {
