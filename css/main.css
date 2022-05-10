@@ -398,7 +398,6 @@ aside {
     display: none;
   }
   
-
   /* Hero Area */
   
   /* Aside */
@@ -428,7 +427,7 @@ aside {
   }
 
   .features .features-item-description {
-    width: 40%;
+    width: 62%;
   }
 
   
@@ -495,12 +494,16 @@ aside {
 
   /* --- FAQ Page --- */
 
+  header {
+    padding: 15px 0;
+  }
+  
   .faq .content-wrapper {
     justify-content: space-between;
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq h2 {
@@ -519,49 +522,43 @@ aside {
   /* --- Hero Area --- */
 
   .hero-area h1 {
-    width: 50%;
+    width: 60%;
   }
 
 
   /* Aside */
-  .aside .content-wrapper {
+  aside .content-wrapper {
     justify-content: space-around;
   }
 
   aside .content-wrapper .form-dscription,
   aside .content-wrapper .form {
-    width: 40%
+    width: 30%
   }
 
   /* -- Features -- */
   
   .features h2 {
-    width: 40%;
+    width: 90%;
   }
 
   .features article {
-    flex-basis: 30%;
+    flex-basis: 33%;
   }
 
 
   /* --- Reviews --- */
 
   .reviews article div {
-    width: 60%;
+    width: 42%;
   }
 
-  /* -- Footer -- */
-
-  footer .content-wrapper {
-    width: 50%;
-    margin: 100px 0;
-  }
 
   /* --- About Page --- */
 
   .mission h2,
   .contact-section .content-wrapper h2 {
-    width: 60%;
+    width: 95%;
   }
 
   /* --- FAQ Page --- */
