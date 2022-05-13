@@ -97,6 +97,7 @@ body {
 
 ul, ol {
   list-style-type: none;
+  font-weight: 600;
 }
 
 a {
@@ -152,10 +153,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header {
   padding: 15px 0;
+  text-transform: capitalize;
 }
 
 header .content-wrapper {
@@ -185,6 +188,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  text-transform: capitalize;
 }
 
 footer {
@@ -230,13 +234,30 @@ footer .copyright {
   align-items: row wrap;
 }
 
+.hero-area h1 {
+  font-weight: 400;
+  font-size: 3.75em;
+}
+
 /* Aside */
 
 aside {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+aside h2 {
+  font-size: 1.825em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+aside p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125em;
 }
 
 /* Features */
@@ -248,6 +269,7 @@ aside {
 }
  
 .features h2 {
+  font-weight: 400;
   margin-bottom: 60px;
 }
 
@@ -265,6 +287,8 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
+  font-size: 1.125em;
 }
 
 /* Reviews */
@@ -273,17 +297,26 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  font-weight: lighter;
+  font-size: 2.25em
 }
 
 .reviews h3 {
-  width: 55%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.825em;
+  font-weight: normal;
+  width: 70%;
   margin: 20px 0;
 }
 
+.reviews p {
+  font-size: 1.125em;
+}
 
 /* ======= About Page ====== */
 
@@ -332,6 +365,32 @@ aside {
 }
 
 
+aside .form {
+  margin-top: 30px;
+}
+  
+input[type-text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type-text] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -545,8 +604,6 @@ aside {
     align-items: flex-start;
   }
 
-
-
   /* --- FAQ Page --- */
 
   header {
@@ -577,7 +634,7 @@ aside {
   /* --- Hero Area --- */
 
   .hero-area h1 {
-    width: 60%;
+    width: 70%;
   }
 
 
@@ -588,7 +645,7 @@ aside {
 
   aside .content-wrapper .form-dscription,
   aside .content-wrapper .form {
-    width: 30%
+    width: 30%;
   }
 
   /* -- Features -- */
