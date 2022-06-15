@@ -326,6 +326,11 @@ input[type-text] {
   text-align: center;
 }
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 /* Reviews */
 
 .reviews {
@@ -613,6 +618,7 @@ input[type-text] {
   .reviews article {
     display: flex;
     justify-content: space-between;
+    padding-top: 5%;
   }
 
   .reviews h2 {
