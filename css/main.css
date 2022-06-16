@@ -98,6 +98,8 @@ body {
 
 ul, ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -113,6 +115,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3, h4 {
@@ -167,19 +170,19 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
-.header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
-  background: #3a3a3a
-}
-
 header figure {
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.header-divider {
+  background: #3a3a3a;
+  height: 1px;
+  margin: 10px 0 20px 0;
+  width: 100%;
 }
 
 header nav {
@@ -228,9 +231,18 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  margin: 0 25%;
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -321,14 +333,14 @@ input[type-text] {
   flex-flow: row wrap;
 }
 
-.features p {
-  margin: 0;
-  text-align: center;
-}
-
 .features i {
 	font-size: 3.75em;
   margin-bottom: 40px;
+}
+
+.features p {
+  margin: 0;
+  text-align: center;
 }
 
 /* Reviews */
@@ -340,22 +352,13 @@ input[type-text] {
   background-color: #2a423a;
 }
 
-.reviews figure {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
-  font-size: 1.825em;
 }
 
 .reviews h3 {
-  width: 60%;
+  width: 55%;
   margin: 20px 0;
 }
 
@@ -431,9 +434,6 @@ input[type-text] {
   line-height: 1.333;
 }
 
-footer .social-icons p {
-  margin: 0 25%;
-}
   
 /* ==========================================================================
    Helper classes
@@ -593,7 +593,7 @@ footer .social-icons p {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 35%;
+    width: 40%;
     margin: 0;
   }
 
@@ -616,19 +616,22 @@ footer .social-icons p {
     width: 62%;
   }
 
-  
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* -- Reviews -- */
 
   .reviews article {
     display: flex;
     justify-content: space-between;
-    padding-top: 5%;
   }
 
   .reviews h2 {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -663,6 +666,11 @@ footer .social-icons p {
   
   footer p {
     line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -752,8 +760,8 @@ footer .social-icons p {
   /* --- Hero Area --- */
 
   .hero-area h1 {
-    width: 80%;
     font-size: 3.75em;
+    width: 80%;
   }
 
   /* Aside */
@@ -764,7 +772,7 @@ footer .social-icons p {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 40%;
+    width: 30%;
   }
 
   .form-description p {
@@ -787,9 +795,9 @@ footer .social-icons p {
   .reviews h2 {
     padding-bottom: 50px;
   }
-  
+
   .reviews article div {
-    width: 42%;
+    width: 50%;
   }
 
   footer h4 {
