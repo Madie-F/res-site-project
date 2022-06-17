@@ -371,7 +371,7 @@ input[type=button] {
 }
 
 figure {
-  align-self: auto;
+  align-self: normal;
 }
 
 /* ======= About Page ====== */
@@ -649,12 +649,15 @@ figure {
   .reviews article figure,
   .reviews article div {
     width: 48%;
-    margin-right: 10px;
   }
   
   .reviews h3 {
     width: 85%;
     margin: 0;
+  }
+  
+  figure {
+    align-self: auto;
   }
 
   /* -- Footer -- */
